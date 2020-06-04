@@ -44,18 +44,18 @@
       crossorigin="anonymous"
     ></script>
     <header>
-      <nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">About Me</a>
+      <nav id="navbar-example2" class="navbar navbar-light bg-dark fixed-top">
+        <a class="navbar-brand text-light" href="#">About Me</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link" href="#Interest">Interest</a>
+            <a class="nav-link text-light" href="#Interest">Interest</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
+            <a class="nav-link text-light" href="#Skills">Skills</a>
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle text-light"
               data-toggle="dropdown"
               href="#"
               role="button"
@@ -218,132 +218,137 @@
         </a>
       </div>
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <section>
-          <h3 id="Interest">Interest</h3>
-          <article class="course">
-            <div class="title">
-              <h4>Video games</h4>
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col">
+              <h3 id="Interest">Interest</h3>
+              <article class="course">
+                <div class="title">
+                  <h4>Video games</h4>
+                </div>
+                <div class="descrition">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
+                    consequuntur quaerat porro consequatur dolor, nobis
+                    aspernatur. Repudiandae similique perferendis natus
+                    delectus, tempora perspiciatis incidunt.
+                  </p>
+                </div>
+              </article>
+              <article class="course">
+                <div class="title">
+                  <h4>Sleeping</h4>
+                </div>
+                <div class="descrition">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
+                    consequuntur quaerat porro consequatur dolor, nobis
+                    aspernatur. Repudiandae similique perferendis natus
+                    delectus, tempora perspiciatis incidunt.
+                  </p>
+                </div>
+              </article>
+              <article class="course">
+                <div class="title">
+                  <h4>Travelling</h4>
+                </div>
+                <div class="descrition">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
+                    consequuntur quaerat porro consequatur dolor, nobis
+                    aspernatur. Repudiandae similique perferendis natus
+                    delectus, tempora perspiciatis incidunt.
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="descrition">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                consequuntur quaerat porro consequatur dolor, nobis aspernatur.
-                Repudiandae similique perferendis natus delectus, tempora
-                perspiciatis incidunt.
-              </p>
-            </div>
-          </article>
-          <article class="course">
-            <div class="title">
-              <h4>Sleeping</h4>
-            </div>
-            <div class="descrition">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                consequuntur quaerat porro consequatur dolor, nobis aspernatur.
-                Repudiandae similique perferendis natus delectus, tempora
-                perspiciatis incidunt.
-              </p>
-            </div>
-          </article>
-          <article class="course">
-            <div class="title">
-              <h4>Travelling</h4>
-            </div>
-            <div class="descrition">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                consequuntur quaerat porro consequatur dolor, nobis aspernatur.
-                Repudiandae similique perferendis natus delectus, tempora
-                perspiciatis incidunt.
-              </p>
-            </div>
-          </article>
-        </section>
 
-        <section>
-          <h3 id="Skills">Skills</h3>
-          <div class="skills">
-            <div class="column">
-              <h4>Coding</h4>
-              <ul>
-                <li>Python</li>
-                <li>R</li>
-                <li>JS</li>
-                <li>Linux</li>
-              </ul>
+            <div class="col">
+              <h3 id="Skills">Skills</h3>
+              <div class="skills">
+                <div class="column">
+                  <h4>Coding</h4>
+                  <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>JS</li>
+                    <li>Linux</li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <h4>Unrealte to Coding Skill</h4>
+                  <ul>
+                    <li>Beer Crafting</li>
+                    <li>Import & Export</li>
+                    <li>Real Estate</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 id="Languages">Languages</h4>
+                  <p>🇹🇭Thai</p>
+                  <p>🇺🇸English</p>
+                  <p>🇨🇳Chinese (Not So good Lately)</p>
+                </div>
+              </div>
             </div>
-            <div class="column">
-              <h4>Unrealte to Coding Skill</h4>
-              <ul>
-                <li>Beer Crafting</li>
-                <li>Import & Export</li>
-                <li>Real Estate</li>
-              </ul>
+            <div class="col">
+              <h3 id="Education">Education</h3>
+              <article>
+                <div class="school">
+                  <span>2 years</span> <strong>Mahidol University</strong>
+                </div>
+                <div class="descrition">
+                  Bechelor Degree of Acturail Science
+                </div>
+              </article>
+              <article>
+                <div class="school">
+                  <span>2 years</span>
+                  <strong>Curtin University</strong>
+                </div>
+                <div>
+                  Bechelor Degree of Acturail Science
+                </div>
+              </article>
             </div>
-            <div>
-              <h4 id="Languages">Languages</h4>
-              <p>🇹🇭Thai</p>
-              <p>🇺🇸English</p>
-              <p>🇨🇳Chinese (Not So good Lately)</p>
+            <div class="col">
+              <h3 id="Experience">Experience</h3>
+              <article>
+                <div class="job-title">
+                  <span>Some Years</span> <strong>Some Company</strong><br />
+                  <strong>Position:</strong> General เบ้
+                </div>
+                <div>
+                  <p><strong>Resposibility:</strong> None</p>
+                  <ul class="job-description">
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ea, tenetur eius nostrum vitae neque repellendus deleniti
+                      modi molestiae et aperiam atque, pariatur ducimus eaque
+                      explicabo eligendi eos dolores! Commodi, ipsa./li>
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus excepturi deserunt quas consectetur dicta, quis
+                      tempore necessitatibus ab eaque culpa fugit voluptatibus
+                      quam odio quaerat molestiae eveniet reprehenderit?
+                      Quisquam, commodi.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Optio vitae dolorem explicabo magni incidunt architecto
+                      deserunt ad, ducimus tempora aperiam nostrum, praesentium
+                      voluptas? Provident ad, neque vero dolor ducimus aliquid.
+                    </li>
+                  </ul>
+                </div>
+              </article>
             </div>
           </div>
-        </section>
-        <section>
-          <h3 id="Education">Education</h3>
-          <article>
-            <div class="school">
-              <span>2 years</span> <strong>Mahidol University</strong>
-            </div>
-            <div class="descrition">
-              Bechelor Degree of Acturail Science
-            </div>
-          </article>
-          <article>
-            <div class="school">
-              <span>2 years</span>
-              <strong>Curtin University</strong>
-            </div>
-            <div>
-              Bechelor Degree of Acturail Science
-            </div>
-          </article>
-        </section>
-        <section>
-          <h3 id="Experience">Experience</h3>
-          <article>
-            <div class="job-title">
-              <span>Some Years</span> <strong>Some Company</strong><br />
-              <strong>Position:</strong> General เบ้
-            </div>
-            <div>
-              <p><strong>Resposibility:</strong> None</p>
-              <ul class="job-description">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
-                  tenetur eius nostrum vitae neque repellendus deleniti modi
-                  molestiae et aperiam atque, pariatur ducimus eaque explicabo
-                  eligendi eos dolores! Commodi, ipsa./li>
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  excepturi deserunt quas consectetur dicta, quis tempore
-                  necessitatibus ab eaque culpa fugit voluptatibus quam odio
-                  quaerat molestiae eveniet reprehenderit? Quisquam, commodi.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  vitae dolorem explicabo magni incidunt architecto deserunt ad,
-                  ducimus tempora aperiam nostrum, praesentium voluptas?
-                  Provident ad, neque vero dolor ducimus aliquid.
-                </li>
-              </ul>
-            </div>
-          </article>
-        </section>
+        </div>
       </div>
     </main>
     <footer class="text-black bg-light">
