@@ -109,6 +109,7 @@
     </header> -->
 
     <main>
+      <!-- carousel -->
       <div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -137,9 +138,19 @@
                   dolor id nibh ultricies vehicula ut id elit.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                  <!-- <a class="btn btn-lg btn-primary" href="#" role="button"
                     >Learn More</a
+                  > -->
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-danger"
+                    data-toggle="popover"
+                    title="Click Bait"
+                    data-trigger="focus"
+                    data-content="There's nothing here to learn move along"
                   >
+                    Don't Click
+                  </button>
                 </p>
               </div>
             </div>
@@ -217,154 +228,336 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-        <div class="container">
-          <div class="row row-cols-2">
-            <div class="col">
-              <h3 id="Interest">Interest</h3>
-              <article class="course">
-                <div class="title">
-                  <h4>Video games</h4>
-                </div>
-                <div class="descrition">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                    consequuntur quaerat porro consequatur dolor, nobis
-                    aspernatur. Repudiandae similique perferendis natus
-                    delectus, tempora perspiciatis incidunt.
-                  </p>
-                </div>
-              </article>
-              <article class="course">
-                <div class="title">
-                  <h4>Sleeping</h4>
-                </div>
-                <div class="descrition">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                    consequuntur quaerat porro consequatur dolor, nobis
-                    aspernatur. Repudiandae similique perferendis natus
-                    delectus, tempora perspiciatis incidunt.
-                  </p>
-                </div>
-              </article>
-              <article class="course">
-                <div class="title">
-                  <h4>Travelling</h4>
-                </div>
-                <div class="descrition">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Deserunt reprehenderit nam unde molestiae, illum cupiditate
-                    consequuntur quaerat porro consequatur dolor, nobis
-                    aspernatur. Repudiandae similique perferendis natus
-                    delectus, tempora perspiciatis incidunt.
-                  </p>
-                </div>
-              </article>
-            </div>
 
-            <div class="col">
-              <h3 id="Skills">Skills</h3>
-              <div class="skills">
-                <div class="column">
-                  <h4>Coding</h4>
-                  <ul>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>JS</li>
-                    <li>Linux</li>
-                  </ul>
+      <!-- data -->
+
+      <div
+        data-spy="scroll"
+        data-target="#navbar-example2"
+        data-offset="0"
+        class="row row-cols-1 row-cols-md-2 container"
+      >
+        <!-- Interest -->
+        <div class="col p-5">
+          <h3 id="Interest">Interest</h3>
+          <div class="row bg-light d-flex align-items-center">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a
+                  class="list-group-item list-group-item-action active"
+                  id="list-home-list"
+                  data-toggle="list"
+                  href="#list-home"
+                  role="tab"
+                  aria-controls="home"
+                  >Video games</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-profile-list"
+                  data-toggle="list"
+                  href="#list-profile"
+                  role="tab"
+                  aria-controls="profile"
+                  >Sleeping</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-messages-list"
+                  data-toggle="list"
+                  href="#list-messages"
+                  role="tab"
+                  aria-controls="messages"
+                  >Travelling</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  id="list-settings-list"
+                  data-toggle="list"
+                  href="#list-settings"
+                  role="tab"
+                  aria-controls="settings"
+                  >Eatting</a
+                >
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="list-home"
+                  role="tabpanel"
+                  aria-labelledby="list-home-list"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Impedit beatae molestiae facilis voluptate cupiditate,
+                  voluptatibus ut, totam earum porro quod obcaecati eum nulla
+                  eligendi deserunt. Molestiae provident ipsum deleniti
+                  expedita?
                 </div>
-                <div class="column">
-                  <h4>Unrealte to Coding Skill</h4>
-                  <ul>
-                    <li>Beer Crafting</li>
-                    <li>Import & Export</li>
-                    <li>Real Estate</li>
-                  </ul>
+                <div
+                  class="tab-pane fade"
+                  id="list-profile"
+                  role="tabpanel"
+                  aria-labelledby="list-profile-list"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda, hic aliquid sed delectus eligendi vero pariatur
+                  quod perferendis itaque molestiae labore dolor enim saepe
+                  dicta amet, beatae explicabo vel eos!
                 </div>
-                <div>
-                  <h4 id="Languages">Languages</h4>
-                  <p>🇹🇭Thai</p>
-                  <p>🇺🇸English</p>
-                  <p>🇨🇳Chinese (Not So good Lately)</p>
+                <div
+                  class="tab-pane fade"
+                  id="list-messages"
+                  role="tabpanel"
+                  aria-labelledby="list-messages-list"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Assumenda, sint. Reprehenderit, ratione voluptatibus qui quae
+                  consectetur facere illo possimus tempore. Dignissimos dolores
+                  excepturi nisi sint rem accusantium aliquid recusandae iusto!
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="list-settings"
+                  role="tabpanel"
+                  aria-labelledby="list-settings-list"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  perspiciatis aliquam eos iste alias temporibus, sed quisquam,
+                  corporis, minima doloremque atque. Perferendis, sed voluptate
+                  laudantium tempore cumque quibusdam unde consectetur.
                 </div>
               </div>
             </div>
-            <div class="col">
-              <h3 id="Education">Education</h3>
-              <article>
-                <div class="school">
-                  <span>2 years</span> <strong>Mahidol University</strong>
-                </div>
-                <div class="descrition">
-                  Bechelor Degree of Acturail Science
-                </div>
-              </article>
-              <article>
-                <div class="school">
-                  <span>2 years</span>
-                  <strong>Curtin University</strong>
-                </div>
-                <div>
-                  Bechelor Degree of Acturail Science
-                </div>
-              </article>
+          </div>
+        </div>
+        <!-- Skill -->
+        <div class="col p-5">
+          <h3 id="Skills">Skills</h3>
+          <div class="skills">
+            <article>
+              <div class="column">
+                <h4>Coding</h4>
+                <ul>
+                  <li>Python</li>
+                  <li>R</li>
+                  <li>JS</li>
+                  <li>Linux</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <div class="column">
+                <h4>Unrealate to Coding Skill</h4>
+                <ul>
+                  <li>Beer Crafting</li>
+                  <li>Import & Export</li>
+                  <li>Real Estate</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <div class="">
+                <h4 id="Languages">Languages</h4>
+                <ul>
+                  <li>🇹🇭Thai</li>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      style="width: 100%;"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <li>🇺🇸English</li>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      style="width: 75%;"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <li>🇨🇳Chinese (Not So good Lately</li>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                      role="progressbar"
+                      style="width: 25%;"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Education -->
+        <div class="col p-5">
+          <h3 id="Education">Education</h3>
+          <article>
+            <div class="school">
+              <span>2 years</span> <strong>Mahidol University</strong>
             </div>
-            <div class="col">
-              <h3 id="Experience">Experience</h3>
-              <article>
-                <div class="job-title">
-                  <span>Some Years</span> <strong>Some Company</strong><br />
-                  <strong>Position:</strong> General เบ้
+            <div class="descrition">
+              Bechelor Degree of Acturail Science
+            </div>
+          </article>
+          <article>
+            <div class="school">
+              <span>2 years</span>
+              <strong>Curtin University</strong>
+            </div>
+            <div>
+              Bechelor Degree of Acturail Science
+            </div>
+          </article>
+        </div>
+        <!-- Experience -->
+        <div class="col p-5">
+          <h3 id="Experience">Experience</h3>
+          <article>
+            <div class="job-title">
+              <span>Some Years</span> <strong>Some Company</strong><br />
+              <strong>Position:</strong> General เบ้
+            </div>
+            <div>
+              <p><strong>Resposibility:</strong> None</p>
+              <ul class="job-description">
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                  tenetur eius nostrum vitae neque repellendus deleniti modi
+                  molestiae et aperiam atque, pariatur ducimus eaque explicabo
+                  eligendi eos dolores! Commodi, ipsa./li>
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  excepturi deserunt quas consectetur dicta, quis tempore
+                  necessitatibus ab eaque culpa fugit voluptatibus quam odio
+                  quaerat molestiae eveniet reprehenderit? Quisquam, commodi.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                  vitae dolorem explicabo magni incidunt architecto deserunt ad,
+                  ducimus tempora aperiam nostrum, praesentium voluptas?
+                  Provident ad, neque vero dolor ducimus aliquid.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="text-black bg-light">
+      <div class="">
+        <a class="text-dark" href="#">Back to The Top</a>
+        <div class="container text-center">
+          <button
+            type="button"
+            class="btn btn-lg btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            data-whatever="@mdo"
+          >
+            Message Me here!
+          </button>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Comment
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                <div>
-                  <p><strong>Resposibility:</strong> None</p>
-                  <ul class="job-description">
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Ea, tenetur eius nostrum vitae neque repellendus deleniti
-                      modi molestiae et aperiam atque, pariatur ducimus eaque
-                      explicabo eligendi eos dolores! Commodi, ipsa./li>
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus excepturi deserunt quas consectetur dicta, quis
-                      tempore necessitatibus ab eaque culpa fugit voluptatibus
-                      quam odio quaerat molestiae eveniet reprehenderit?
-                      Quisquam, commodi.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Optio vitae dolorem explicabo magni incidunt architecto
-                      deserunt ad, ducimus tempora aperiam nostrum, praesentium
-                      voluptas? Provident ad, neque vero dolor ducimus aliquid.
-                    </li>
-                  </ul>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label
+                        for="recipient-name"
+                        class="col-form-label float-left"
+                        >Recipient:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label
+                        for="message-text"
+                        class="col-form-label float-left"
+                        >Message:</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message-text"
+                      ></textarea>
+                    </div>
+                  </form>
                 </div>
-              </article>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Send message
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="text-black bg-light">
-      <div class="text-center">
-        <a class="text-dark" href="#">Back to The Top</a>
-      </div>
-      <div class="text-right text-dark">
+      <div class="text-right text-dark pr-3">
         <p>
           &copy; Kanin
         </p>
         <p>
-          <a href=""><i class="fab fa-facebook text-dark"></i></a>
-          <a href=""><i class="fab fa-twitter text-dark"></i></a>
-          <a href=""><i class="fab fa-github-alt text-dark"></i></a>
-          <a href=""><i class="fab fa-instagram text-dark"></i></a>
-          <a href=""><i class="fab fa-linkedin-in text-dark"></i></a>
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook text-dark"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fab fa-twitter text-dark"></i
+          ></a>
+          <a href="https://github.com/kaninsexy/"
+            ><i class="fab fa-github-alt text-dark"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram text-dark"></i
+          ></a>
+          <a href="https://www.linkedin.com/"
+            ><i class="fab fa-linkedin-in text-dark"></i
+          ></a>
         </p>
       </div>
     </footer>
